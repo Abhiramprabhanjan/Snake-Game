@@ -1,0 +1,80 @@
+body{
+  
+  
+      
+ 
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+
+}
+
+.game-container{
+    /* border-radius: 4px; */
+    /* padding: 2rem 2rem 4rem 2rem; */
+    text-align: center;
+}
+
+
+h1{
+    
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow:  0 0 50px #4bf3dada,
+    0 0 10px #44ee90cb;
+
+   
+}
+
+
+#game-board{
+   
+   
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+   
+      backdrop-filter:  blur(20px); 
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 23px 32px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 40px 32px rgba(0, 0, 0, 0.1); */
+    box-shadow:  0 0 60px rgba(153, 5, 206, 0.712);  /* Green neon glow base */
+    
+
+    min-height: 80vmin;
+    width: 80vmin;
+    display: grid;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(21,1fr);
+    margin: 0 auto 30px;
+    
+}
+
+
+.snake{
+    /* background: linear-gradient(135deg, #4ade80, #22c55e); */
+    background-color: rgb(70, 244, 99);
+    /* height: 100vmin; */
+    border: .25vmin solid rgb(3, 190, 130);
+    border-radius: 4px;
+
+    box-shadow: 0 0 10px rgb(3, 190, 130);
+   
+}
+
+.food{
+
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    /* background-color: rgb(223, 42, 42); */
+    border: .25vmin solid rgb(197, 18, 18);
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgb(197, 18, 18);
+
+}
